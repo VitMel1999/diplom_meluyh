@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<body>
+
+	<div id="button">
+		<button id="open">открыть</button>
+		<button id="exit">закрыть</button>
+	</div>
+  <div id="container">
+    <div id="cont">
+				<div class="inWork">
+					<input type="text" id="work">
+				</div>
+				<div class="btnAdd">
+					<button id="add">Ввод</button>
+				</div>
+			</div>
+			<div id="out">
+				<ul id="myUl">
+					
+				</ul>
+			</div>
+	</div>
+
+	<div id="myModal">
+		<div id="content">
+			<div id="exBtn">
+				<div id="modText">
+					Вход на сайт
+				</div>
+				 <button id="close">X</button>
+			</div>
+			<div id="myform">
+				<form action="index.html" method="GET">
+				    <input id="email" class="forma" type="email" placeholder="login" name="your-email"><br>
+					<input id="password" class="forma" type="password" placeholder="Password" name="your-pass">
+					<span id="error">Неправильный логин или пароль</span>						    
+				</form>
+				<div id="btnEnter">
+					<button id="enter" class="submit" type="submit">Вход</button>
+					<button id="create" class="submit" type="submit">Создать аккаунт</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="localStorage.js"></script>	
+<script src="authService.js"></script>	
+<script src="index.js"></script>
+</body>
+</html>
